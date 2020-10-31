@@ -1,0 +1,330 @@
+/*Global Style*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 60%;
+}
+h1 {
+  font-size: 2.6rem;
+}
+li,
+button,
+p,
+label,
+input {
+  font-size: 2rem;
+}
+h2 {
+  font-size: 4.8rem;
+}
+h3 {
+  font-size: 3rem;
+  font-weight: normal;
+}
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+button {
+  padding: 1.5rem 4rem;
+  background-color: #4c6e97;
+  border: none;
+  border-radius: 5%;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: ease-out 0.8s;
+}
+button:hover {
+  background-color: #32465e;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/*Nav Section hero*/
+
+.main-head {
+  background: #131c27;
+  color: white;
+  text-decoration: none;
+  position: sticky;
+  top: 0px;
+  z-index: 3;
+}
+a {
+  color: white;
+}
+
+nav {
+  min-height: 10vh;
+  display: flex;
+  margin: auto;
+  width: 90%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  padding: 2rem;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+#logo {
+  flex: 2 1 40rem;
+  font-family: "Pattaya", sans-serif;
+  font-weight: normal;
+}
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url(/img/landing-page.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.hero button {
+  margin: 2rem;
+}
+.hero h3 {
+  padding: 2rem;
+}
+
+/*Locations Section*/
+
+#Booking {
+  background-position: center;
+}
+
+#Locations {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), transparent),
+    url(/img/david-rodrigo-Fr6zexbmjmc-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.Locations-head {
+  width: 90%;
+  margin: auto;
+  color: white;
+}
+
+.Locations-head h2 {
+  padding: 1rem 0rem;
+  text-decoration: underline;
+}
+.Locations-head h3 {
+  padding: 4rem 0rem;
+}
+
+.cloud {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  pointer-events: none;
+}
+
+.moving-cloud-1 {
+  animation: cloudAnimation 2s infinite alternate ease-in-out;
+}
+.moving-cloud-2 {
+  top: 10%;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+@keyframes cloudAnimation {
+  from {
+    transform: translate(10%, -10%);
+  }
+  to {
+    transform: translate(0%, 0%);
+  }
+}
+
+/*Benefits Section*/
+.Benefits-head {
+  background-color: #343c44;
+  padding: 3rem;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+.Benefits-head h3 {
+  padding: 1rem;
+}
+
+.cards {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  min-height: 70vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.card {
+  text-align: center;
+  flex: 1 1 25rem;
+  min-height: 40vh;
+  margin: 2rem 5rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1), 0px 20px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.cards img {
+  max-width: 15%;
+  margin: 2rem;
+}
+
+.card-icon {
+  background-color: rgb(221, 147, 82);
+}
+
+.cards h4,
+p {
+  padding: 1rem;
+  margin: 3rem;
+}
+
+#contact {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), transparent),
+    url(/img/pascal-meier-UYiesSO4FiM-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-wraper {
+  background: rgba(19, 28, 39, 0.9);
+  color: white;
+  width: 40%;
+  border-radius: 20px;
+}
+.form-head {
+  text-align: center;
+  padding: 4rem;
+}
+.name-form {
+  text-align: center;
+  padding: 2rem;
+}
+.email-form {
+  text-align: center;
+  padding: 2rem;
+}
+
+.form-wraper label {
+  margin: 0rem 3rem;
+}
+
+.form-wraper button {
+  width: 100%;
+  padding: 2rem;
+  margin-top: 8rem;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+.form-wraper input {
+  padding: 1rem 1.5rem;
+}
+
+footer {
+  min-height: 10vh;
+  color: white;
+  background-color: #131c27;
+}
+
+.footer-wraper {
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  min-height: 20vh;
+  flex-wrap: wrap;
+}
+footer h5 {
+  flex: 1 1 30rem;
+}
+footer p {
+  font-style: normal;
+  font-size: small;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
+  align-items: center;
+}
+footer ul {
+  display: flex;
+  list-style: none;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+button:focus {
+  background: #2c3f57;
+  outline-style: solid;
+  outline-color: cornflowerblue;
+}
+
+/*Media Section*/
+
+@media screen and (max-width: 853px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+  #logo {
+    padding: 2rem;
+  }
+
+  .form-wraper {
+    width: 100%;
+  }
+  footer {
+    text-align: center;
+  }
+  footer h5 {
+    padding-bottom: 1rem;
+  }
+  footer h1 {
+    text-align: left;
+    font-weight: lighter;
+    font-size: 1rem;
+  }
+
+  @media screen and (max-width: 414px) {
+    .cloud {
+      height: 40rem;
+    }
+  }
+}
